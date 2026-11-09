@@ -1,5 +1,6 @@
 [extensions]
 ids = [
+  "anthropic.claude-code",
   "dracula-theme.theme-dracula",
   "ecmel.vscode-html-css",
   "github.vscode-pull-request-github",
@@ -14,6 +15,7 @@ ids = [
 "editor.fontFamily" = "'CaskaydiaCove Nerd Font Mono', monospace"
 "editor.fontLigatures" = true
 "terminal.integrated.fontFamily" = "'CaskaydiaCove Nerd Font Mono'"
+"claudeCode.hideOnboarding" = true
 "update.mode" = "none"
 "extensions.autoCheckUpdates" = false
 
