@@ -1,0 +1,44 @@
+[settings]
+colorscheme = "dracula"
+mkparents = true
+softwrap = true
+wordwrap = true
+
+[bindings]
+"Alt-/" = "lua:comment.comment"
+"CtrlUnderscore" = "lua:comment.comment"
+
+[colorschemes.dracula]
+default = "#F8F8F2,#282A36"
+comment = "#6272A4,#282A36"
+identifier = "#50FA7B,#282A36"
+"identifier.class" = "#8BE9FD,#282A36"
+"identifier.var" = "#F8F8F2,#282A36"
+constant = "#BD93F9,#282A36"
+"constant.number" = "#F8F8F2,#282A36"
+"constant.string" = "#F1FA8C,#282A36"
+symbol = "#FF79C6,#282A36"
+"symbol.brackets" = "#F8F8F2,#282A36"
+"symbol.tag" = "#AE81FF,#282A36"
+type = "italic #8BE9FD,#282A36"
+"type.keyword" = "#FF79C6,#282A36"
+special = "#FF79C6,#282A36"
+statement = "#FF79C6,#282A36"
+preproc = "#FF79C6,#282A36"
+underlined = "#FF79C6,#282A36"
+error = "bold #FF5555,#282A36"
+todo = "bold #FF79C6,#282A36"
+diff-added = "#50FA7B,#282A36"
+diff-modified = "#FFB86C,#282A36"
+diff-deleted = "#FF5555,#282A36"
+gutter-error = "#FF5555,#282A36"
+gutter-warning = "#E6DB74,#282A36"
+statusline = "#F8F8F2,#282A36"
+tabbar = "#F8F8F2,#282A36"
+indent-char = "#6272A4,#282A36"
+line-number = "#6272A4,#282A36"
+current-line-number = "#F8F8F2,#282A36"
+cursor-line = "#44475A,#282A36"
+color-column = "#44475A,#282A36"
+"type.extended" = "default,#282A36"
+editor = "#F8F8F2,#282A36"

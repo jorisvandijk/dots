@@ -1,0 +1,18 @@
+frame = "visible"
+block_hide_minimize = true
+
+[[float]]
+app = "com.apple.SecurityAgent" # password prompts
+
+[[float]]
+app = "com.apple.appkit.xpc.openAndSavePanelService" # open and save dialogs
+
+[[float]]
+app = "com.apple.coreservices.uiagent" # system alerts
+
+[[float]]
+app = "com.apple.archiveutility"
+
+[[float]]
+app = "org.gimp.gimp"
+title = "^(Open|Export|Import|Save|Overwrite)"

@@ -1,0 +1,225 @@
+[settings]
+"extensions.autoDisableScopes" = 0
+"accessibility.typeaheadfind.flashBar" = 0
+"browser.backspace_action" = 0
+"browser.startup.page" = 3
+"browser.tabs.closeWindowWithLastTab" = false
+"browser.toolbars.bookmarks.visibility" = "never"
+"browser.translations.neverTranslateLanguages" = "nl"
+"browser.urlbar.shortcuts.actions" = false
+"browser.urlbar.shortcuts.tabs" = false
+"browser.urlbar.suggest.engines" = false
+"browser.urlbar.suggest.quickactions" = false
+"browser.urlbar.suggest.topsites" = false
+"layout.css.prefers-color-scheme.content-override" = 0
+"extensions.activeThemeID" = "firefox-compact-dark@mozilla.org"
+"ui.systemUsesDarkTheme" = 1
+"privacy.resistFingerprinting" = false
+"privacy.resistFingerprinting.letterboxing" = false
+"privacy.fingerprintingProtection" = true
+"privacy.fingerprintingProtection.overrides" = "+AllTargets,-CSSPrefersColorScheme"
+"privacy.sanitize.sanitizeOnShutdown" = false
+"browser.nova.enabled" = false
+"sidebar.main.tools" = ""
+"sidebar.revamp" = true
+"sidebar.verticalTabs" = true
+"toolkit.legacyUserProfileCustomizations.stylesheets" = true
+"media.videocontrols.picture-in-picture.enabled" = false
+"media.videocontrols.picture-in-picture.video-toggle.enabled" = false
+"dom.webserial.enabled" = true
+
+"browser.uiCustomization.state" = '{"currentVersion":20,"newElementCount":0,"dirtyAreaCache":["nav-bar","unified-extensions-area"],"seen":["ublock0_raymondhill_net-browser-action","sponsorblocker_ajay_app-browser-action","idcac-pub_guus_ninja-browser-action","_73a6fe31-595d-460b-a920-fcc0f8843232_-browser-action","developer-button"],"placements":{"nav-bar":["back-button","forward-button","stop-reload-button","spring","urlbar-container","spring","downloads-button","unified-extensions-button","PanelUI-button"],"unified-extensions-area":["ublock0_raymondhill_net-browser-action","sponsorblocker_ajay_app-browser-action","idcac-pub_guus_ninja-browser-action","_73a6fe31-595d-460b-a920-fcc0f8843232_-browser-action"],"PersonalToolbar":["personal-bookmarks"],"TabsToolbar":[],"toolbar-menubar":["menubar-items"],"widget-overflow-fixed-list":[]}}'
+
+[user_chrome]
+text = '''
+#tabs-newtab-button,
+.tabs-newtab-button,
+#TabsToolbar .new-tab-button,
+#vertical-tabs .new-tab-button,
+#sidebar-main .new-tab-button,
+#vertical-tabs-newtab-button,
+[data-l10n-id="tabs-toolbar-new-tab"],
+[data-l10n-id="newtab-button-label"],
+.tabbrowser-arrowscrollbox-periphery,
+#alltabs-button {
+  display: none !important;
+}
+'''
+
+[policies]
+EnterprisePoliciesEnabled = true
+
+[policies.ExtensionSettings."uBlock0@raymondhill.net"]
+installation_mode = "force_installed"
+install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
+
+[policies.ExtensionSettings."{73a6fe31-595d-460b-a920-fcc0f8843232}"]
+installation_mode = "force_installed"
+install_url = "https://addons.mozilla.org/firefox/downloads/latest/noscript/latest.xpi"
+
+[policies.ExtensionSettings."sponsorBlocker@ajay.app"]
+installation_mode = "force_installed"
+install_url = "https://addons.mozilla.org/firefox/downloads/latest/sponsorblock/latest.xpi"
+
+[policies.ExtensionSettings."idcac-pub@guus.ninja"]
+installation_mode = "force_installed"
+install_url = "https://addons.mozilla.org/firefox/downloads/latest/istilldontcareaboutcookies/latest.xpi"
+
+[policies.SearchEngines]
+Default = "Startpage"
+
+[[policies.SearchEngines.Add]]
+Name = "Startpage"
+URLTemplate = "https://www.startpage.com/search?q={searchTerms}"
+Method = "GET"
+IconURL = "https://www.startpage.com/favicon.ico"
+Alias = "@sp"
+
+[policies."3rdparty".Extensions."uBlock0@raymondhill.net"]
+userSettings = [["userFiltersTrusted", "true"]]
+
+[policies."3rdparty".Extensions."uBlock0@raymondhill.net".toOverwrite]
+filters = [
+  '! Google login prompts',
+  '||accounts.google.com/gsi/iframe/*',
+  '! Startpage ad nag',
+  'www.startpage.com##.css-13k8eon',
+  'eu.startpage.com##.css-q66hc5',
+  'eu.startpage.com##.css-34zzm5',
+  '! YouTube hamburger menu',
+  'www.youtube.com###masthead #guide-button',
+  '! YouTube homepage feed',
+  'www.youtube.com##ytd-browse[page-subtype="home"] #contents',
+  'www.youtube.com##ytd-browse[page-subtype="home"] ytd-rich-grid-renderer',
+  '! YouTube left sidebar',
+  'www.youtube.com##ytd-guide-renderer',
+  'www.youtube.com##tp-yt-app-drawer',
+  'www.youtube.com##ytd-mini-guide-renderer',
+  '! YouTube merch shelf',
+  'www.youtube.com##ytd-merch-shelf-renderer',
+  '! YouTube right three-dot menu',
+  'www.youtube.com###masthead #button',
+  '! YouTube sign in',
+  'www.youtube.com##ytd-button-renderer:has-text(Sign in)',
+  '! YouTube slowdown toast',
+  'www.youtube.com##.paper-toast-open.yt-notification-action-renderer.style-scope.toast-button',
+  '! YouTube video suggestions pane',
+  'www.youtube.com##ytd-watch-next-secondary-results-renderer',
+  '! YouTube voice search',
+  'www.youtube.com###voice-search-button',
+]
+
+[[policies.Bookmarks]]
+Title = "Bazarr"
+URL = "https://bazarr.vdijk.be"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "Docker"
+URL = "https://docker.vdijk.be"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "Frigate"
+URL = "https://frigate.vdijk.be"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "Home Assistant"
+URL = "https://ha.vdijk.be"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "Homelab startpage"
+URL = "https://home.vdijk.be"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "Immich"
+URL = "https://immich.vdijk.be"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "Jellyfin"
+URL = "https://jellyfin.vdijk.be"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "Jorisvandijk.com"
+URL = "https://jorisvandijk.com"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "Lidarr"
+URL = "https://lidarr.vdijk.be"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "Navidrome"
+URL = "https://navidrome.vdijk.be"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "Nginx Proxy Manager"
+URL = "https://npm.vdijk.be"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "PiHole"
+URL = "https://pihole.vdijk.be/admin"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "Prowlarr"
+URL = "https://prowlarr.vdijk.be"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "Proxmox"
+URL = "https://proxmox.vdijk.be"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "Proxmox Backup Server"
+URL = "https://pbs.vdijk.be"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "qBittorrent"
+URL = "https://qbittorrent.vdijk.be"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "Radarr"
+URL = "https://radarr.vdijk.be"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "RomM"
+URL = "https://romm.vdijk.be"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "SABnzbd"
+URL = "https://sabnzbd.vdijk.be"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "Seerr"
+URL = "https://seerr.vdijk.be"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "Sonarr"
+URL = "https://sonarr.vdijk.be"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "Tidarr"
+URL = "https://tidarr.vdijk.be"
+Placement = "menu"
+
+[[policies.Bookmarks]]
+Title = "WireGuard"
+URL = "https://wireguard.vdijk.be"
+Placement = "menu"
