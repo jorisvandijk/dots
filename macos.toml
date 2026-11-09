@@ -40,6 +40,11 @@ ShowRemovableMediaOnDesktop = false
 ShowPathbar = true
 ShowStatusBar = true
 
+[preferences."com.apple.dock"]
+autohide = true
+autohide-delay = 1000.0 # never slides in
+autohide-time-modifier = 0.0
+
 [preferences."com.apple.desktopservices"]
 DSDontWriteNetworkStores = true
 DSDontWriteUSBStores = true
