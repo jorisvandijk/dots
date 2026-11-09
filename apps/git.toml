@@ -1,0 +1,12 @@
+[settings.user]
+name = "Joris"
+email = "joris@jorisvandijk.com"
+
+[settings.init]
+defaultBranch = "main"
+
+[settings.core]
+hooksPath = "/Users/joris/.git-hooks"
+
+[settings.push]
+autoSetupRemote = true

@@ -1,0 +1,129 @@
+[environment]
+EDITOR = "micro"
+VISUAL = "micro"
+COLORTERM = "truecolor"
+HOMEBREW_NO_ANALYTICS = "1"
+HOMEBREW_NO_ASK = "1"
+HOMEBREW_NO_ENV_HINTS = "1"
+_ZO_DOCTOR = "0"
+
+[profile]
+text = '''
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export PATH="$HOME/git/scripts:$HOME/.local/bin:$HOME/go/bin:$PATH"
+'''
+
+[aliases]
+".." = "cd .."
+c = "clear"
+cat = "bat"
+eject = "jEject"
+ex = "jExtract"
+ga = "git add -A"
+gd = "git diff --color=always"
+gp = "git push"
+grep = "grep --color=auto"
+gs = "git status"
+hn = "jHugoHelper new"
+hm = "jHugoHelper microblog"
+hs = "jHugoHelper server"
+la = "jList -a"
+ls = "jList"
+lsblk = "diskutil list"
+m = "micro"
+mpv = "/Applications/mpv.app/Contents/MacOS/mpv"
+n = "newsboat"
+newrepo = "jNewRepo"
+o = "jOpenFZF"
+push = "jPush"
+repos = "jRepos"
+s = "jFindApp"
+server = "ssh -t root@192.168.1.5"
+server-tmux = 'ssh -t root@192.168.1.5 "tmux attach || tmux new -s main"'
+space = 'du -sh "${1:-.}"'
+u = "malum run && brew upgrade"
+w = "curl wttr.in"
+x = "chmod +x"
+
+[zshrc]
+text = '''
+typeset -U path cdpath fpath manpath
+fpath+=(/opt/homebrew/share/zsh-abbr)
+
+autoload -U compinit && compinit
+
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+HISTSIZE="200000"
+SAVEHIST="200000"
+HISTFILE="$HOME/.zsh_history"
+setopt HIST_FCNTL_LOCK
+setopt HIST_IGNORE_DUPS
+setopt HIST_SAVE_NO_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt SHARE_HISTORY
+
+if test -n "$KITTY_INSTALLATION_DIR"; then
+  export KITTY_SHELL_INTEGRATION="no-rc"
+  autoload -Uz -- "$KITTY_INSTALLATION_DIR"/shell-integration/zsh/kitty-integration
+  kitty-integration
+  unfunction kitty-integration
+fi
+
+setopt hist_verify
+setopt prompt_subst
+
+source "$HOME/git/scripts/j.zsh"
+
+cl() {
+  cd "$@" && command ls
+}
+
+fcd() {
+  cd "$(\ls -d */ | fzf)"
+}
+
+gc() {
+  git commit -m "$*"
+}
+
+git_status_prompt() {
+  local st
+  st=$(git --no-optional-locks status --porcelain 2>/dev/null) || return
+  case $st in
+    ('') echo " %F{green}✓%f" ;;
+    ((|*$'\n')(DD|AU|UD|UA|DU|AA|UU)*) echo " %F{red}●%f" ;;
+    (*) echo " %F{yellow}✘%f" ;;
+  esac
+}
+
+h() {
+  local cmd
+  cmd=$( ( fc -l -n 1 -1 || fc -l -n ) | fzf --tac --no-sort)
+  [ -n "$cmd" ] && print -z "$cmd"
+}
+
+PROMPT='
+%F{green}┌──(%f%F{135}%~%F{green})%f$(git_status_prompt)
+%F{green}└─%f%(?,%F{135}λ%f,%F{red}✘%f) '
+
+if [[ $options[zle] = on ]]; then
+  source <(fzf --zsh)
+fi
+
+eval "$(zoxide init zsh --cmd cd)"
+
+source /opt/homebrew/share/zsh-abbr/zsh-abbr.zsh
+
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+'''
+
+[abbreviations]
+copy = "rsync -a --no-owner --partial --info=progress2 -e ssh"
+symlink = "ln -s"
+
+[global_abbreviations]
+data = "root@192.168.1.5:/data/"
+pc = "|pbcopy"
+srv = "root@192.168.1.5:/data/"

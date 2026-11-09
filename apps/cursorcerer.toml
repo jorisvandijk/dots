@@ -1,0 +1,8 @@
+[preferences]
+autoShow = true
+idleHide = 5
+
+# ctrl+option+K: key code 40, control 4096 + option 2048.
+[preferences.toggleCursorHotKey]
+keyCode = 40
+modifiers = 6144

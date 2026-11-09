@@ -1,0 +1,21 @@
+[extensions]
+ids = [
+  "dracula-theme.theme-dracula",
+  "ecmel.vscode-html-css",
+  "github.vscode-pull-request-github",
+  "streetsidesoftware.code-spell-checker",
+  "tamasfe.even-better-toml",
+]
+
+[settings]
+"workbench.colorTheme" = "Dracula Theme"
+"telemetry.telemetryLevel" = "off"
+"files.autoSave" = "afterDelay"
+"editor.fontFamily" = "'CaskaydiaCove Nerd Font Mono', monospace"
+"editor.fontLigatures" = true
+"terminal.integrated.fontFamily" = "'CaskaydiaCove Nerd Font Mono'"
+"update.mode" = "none"
+"extensions.autoCheckUpdates" = false
+
+[argv]
+enable-crash-reporter = false

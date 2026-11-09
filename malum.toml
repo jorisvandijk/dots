@@ -1,0 +1,17 @@
+[system_config]
+enabled = true
+
+[keyboard]
+enabled = true
+
+[window_manager]
+enabled = true
+
+[launcher]
+enabled = true
+
+[clipboard]
+enabled = true
+
+[samba]
+enabled = true

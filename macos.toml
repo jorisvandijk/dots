@@ -1,0 +1,120 @@
+[preferences.NSGlobalDomain]
+AppleInterfaceStyle = "Dark"
+AppleAccentColor = 6 # pink
+AppleShowScrollBars = "WhenScrolling"
+_HIHideMenuBar = true
+AppleMenuBarVisibleInFullscreen = false
+CGDisableCursorLocationMagnification = true # no shake to find the pointer
+InitialKeyRepeat = 30
+KeyRepeat = 2
+NSAutomaticCapitalizationEnabled = false
+NSAutomaticPeriodSubstitutionEnabled = false
+NSAutomaticSpellingCorrectionEnabled = false
+"com.apple.swipescrolldirection" = false # natural scrolling off
+"com.apple.trackpad.forceClick" = false
+"com.apple.sound.beep.volume" = 0
+"com.apple.sound.uiaudio.enabled" = false
+
+[preferences."com.apple.BezelServices"]
+dAuto = false # keyboard backlight in low light
+
+[preferences."com.apple.AppleMultitouchTrackpad"]
+Clicking = true
+TrackpadThreeFingerDrag = true
+
+[preferences."com.apple.driver.AppleBluetoothMultitouch.trackpad"]
+Clicking = true
+TrackpadThreeFingerDrag = true
+
+[preferences."com.apple.finder"]
+AppleShowAllExtensions = true
+FXDefaultSearchScope = "SCcf" # current folder
+FXEnableExtensionChangeWarning = false
+FXPreferredViewStyle = "Nlsv" # list
+FXRemoveOldTrashItems = true
+NewWindowTarget = "PfHm" # home
+QuitMenuItem = true
+ShowHardDrivesOnDesktop = false
+ShowExternalHardDrivesOnDesktop = false
+ShowRemovableMediaOnDesktop = false
+ShowPathbar = true
+ShowStatusBar = true
+
+[preferences."com.apple.desktopservices"]
+DSDontWriteNetworkStores = true
+DSDontWriteUSBStores = true
+
+[preferences."com.apple.screencapture"]
+location = "/Users/joris/Documents"
+target = "clipboard"
+
+[preferences."com.apple.screensaver"]
+askForPassword = true
+askForPasswordDelay = 0
+
+[preferences."com.apple.menuextra.clock"]
+ShowAMPM = false
+ShowDayOfWeek = true
+
+[preferences."com.apple.TextInputMenu"]
+visible = false
+
+[current_host."com.apple.controlcenter"]
+Timer = 8 # hidden
+
+[preferences."com.apple.WindowManager"]
+GloballyEnabled = false # Stage Manager
+EnableStandardClickToShowDesktop = false
+EnableTiledWindowMargins = false
+StandardHideDesktopIcons = true
+StandardHideWidgets = true
+
+[preferences."com.apple.assistant.support"]
+"Assistant Enabled" = false
+
+[preferences."com.apple.Siri"]
+StatusMenuVisible = false
+VoiceTriggerUserEnabled = false
+
+[preferences."com.apple.gamed"]
+GKOptedOutOfGameCenter = true
+
+[default_apps]
+browser = "net.librewolf.librewolf"
+video = "io.mpv"
+
+[sudo]
+touch_id = true
+
+[power.battery]
+lessbright = 0
+
+[apple_apps]
+remove = ["GarageBand", "iMovie", "Keynote", "Numbers", "Pages"]
+
+[hosts]
+"ha.vdijk.be" = "10.10.10.110"
+"frigate.vdijk.be" = "10.10.10.110"
+"tidarr.vdijk.be" = "10.10.10.110"
+"sabnzbd.vdijk.be" = "10.10.10.110"
+"radarr.vdijk.be" = "10.10.10.110"
+"sonarr.vdijk.be" = "10.10.10.110"
+"bazarr.vdijk.be" = "10.10.10.110"
+"jellyfin.vdijk.be" = "10.10.10.110"
+"npm.vdijk.be" = "10.10.10.110"
+"qbittorrent.vdijk.be" = "10.10.10.110"
+"lidarr.vdijk.be" = "10.10.10.110"
+"prowlarr.vdijk.be" = "10.10.10.110"
+"pihole.vdijk.be" = "10.10.10.110"
+"pbs.vdijk.be" = "10.10.10.110"
+"seerr.vdijk.be" = "10.10.10.110"
+"immich.vdijk.be" = "10.10.10.110"
+"romm.vdijk.be" = "10.10.10.110"
+"navidrome.vdijk.be" = "10.10.10.110"
+"wireguard.vdijk.be" = "10.10.10.110"
+"proxmox.vdijk.be" = "10.10.10.110"
+"docker.vdijk.be" = "10.10.10.110"
+"home.vdijk.be" = "10.10.10.110"
+"storage.vdijk.be" = "10.10.10.119"
+Proxmox = "192.168.1.5"
+Docker = "10.10.10.119"

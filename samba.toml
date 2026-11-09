@@ -1,0 +1,5 @@
+[[server]]
+name = "homelab"
+host = "192.168.1.5"
+user = "joris"
+shares = ["data", "cctv"]
