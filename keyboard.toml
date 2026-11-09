@@ -7,7 +7,7 @@ fn = "left_control"
 left_control = "fn"
 
 [hyper]
-a = "com.apple.Safari.WebApp.81ECD9B4-D06D-4B6B-8CF2-40E441AD975A"
+a = "com.apple.Safari.WebApp.81ECD9B4-D06D-4B6B-8CF2-40E441AD975A" # Claude
 b = "com.bitwarden.desktop"
 c = "com.apple.Safari.WebApp.A8FD5C39-32D6-4291-A929-0A98149B8C0A" # Frigate
 d = "com.hnc.Discord"
