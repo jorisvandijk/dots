@@ -71,6 +71,10 @@ visible = false
 
 [current_host."com.apple.controlcenter"]
 Timer = 8 # hidden
+NowPlaying = 8 # Also hidden
+
+[current_host."com.apple.Spotlight"]
+MenuItemHidden = 1
 
 [preferences."com.apple.WindowManager"]
 GloballyEnabled = false # Stage Manager
@@ -88,6 +92,9 @@ VoiceTriggerUserEnabled = false
 
 [preferences."com.apple.gamed"]
 GKOptedOutOfGameCenter = true
+
+[preferences."com.apple.HIToolbox"]
+AppleEnabledInputSources = [{ "InputSourceKind" = "Keyboard Layout", "KeyboardLayout ID" = 0, "KeyboardLayout Name" = "U.S." }]
 
 [default_apps]
 browser = "net.librewolf.librewolf"
