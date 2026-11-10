@@ -7,15 +7,13 @@ fn = "left_control"
 left_control = "fn"
 
 [hyper]
-a = "com.apple.Safari.WebApp.81ECD9B4-D06D-4B6B-8CF2-40E441AD975A" # Claude
+a = "com.anthropic.claudefordesktop"
 b = "com.bitwarden.desktop"
-c = "com.apple.Safari.WebApp.A8FD5C39-32D6-4291-A929-0A98149B8C0A" # Frigate
 d = "com.hnc.Discord"
 e = "com.apple.mail"
 f = "com.apple.finder"
 g = "org.gimp.gimp"
 h = "clipboard"
-m = "com.apple.Safari.WebApp.25E00EE0-ED44-43AE-A3B0-B0B3E980E443" # Navidrome
 n = "com.apple.Notes"
 return = "net.kovidgoyal.kitty"
 space = "launcher"
