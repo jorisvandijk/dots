@@ -91,6 +91,10 @@ video = "io.mpv"
 [sudo]
 touch_id = true
 
+[computer]
+hostname = "macbook"
+boot_sound = false
+
 [power.battery]
 lessbright = 0
 
