@@ -9,6 +9,7 @@ left_control = "fn"
 [hyper]
 a = "com.anthropic.claudefordesktop"
 b = "com.bitwarden.desktop"
+c = "com.apple.Safari.WebApp.2658B51D-1592-4E3B-A6B6-7EC2D3F79975"
 d = "com.hnc.Discord"
 e = "com.apple.mail"
 f = "com.apple.finder"
