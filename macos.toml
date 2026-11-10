@@ -10,6 +10,9 @@ KeyRepeat = 2
 NSAutomaticCapitalizationEnabled = false
 NSAutomaticPeriodSubstitutionEnabled = false
 NSAutomaticSpellingCorrectionEnabled = false
+WebAutomaticSpellingCorrectionEnabled = false
+NSAutomaticDashSubstitutionEnabled = false 
+NSAutomaticQuoteSubstitutionEnabled = false
 "com.apple.swipescrolldirection" = false # natural scrolling off
 "com.apple.trackpad.forceClick" = false
 "com.apple.sound.beep.volume" = 0
@@ -44,6 +47,8 @@ ShowStatusBar = true
 autohide = true
 autohide-delay = 1000.0 # never slides in
 autohide-time-modifier = 0.0
+persistent-apps = []
+persistent-others = []
 
 [preferences."com.apple.desktopservices"]
 DSDontWriteNetworkStores = true

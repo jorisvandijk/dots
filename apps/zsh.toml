@@ -50,7 +50,7 @@ text = '''
 typeset -U path cdpath fpath manpath
 fpath+=(/opt/homebrew/share/zsh-abbr)
 
-autoload -U compinit && compinit
+autoload -U compinit && compinit -u
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
