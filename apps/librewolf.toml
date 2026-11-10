@@ -3,7 +3,7 @@
 "accessibility.typeaheadfind.flashBar" = 0
 "browser.backspace_action" = 0
 "browser.startup.page" = 3
-"browser.tabs.closeWindowWithLastTab" = false
+"browser.tabs.closeWindowWithLastTab" = true
 "browser.toolbars.bookmarks.visibility" = "never"
 "browser.translations.neverTranslateLanguages" = "nl"
 "browser.warnOnQuitShortcut" = false
