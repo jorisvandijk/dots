@@ -100,6 +100,10 @@ touch_id = true
 hostname = "macbook"
 boot_sound = false
 
+# The screen's size in points: 1710x1112 is "More Space" on this MacBook Air.
+[display]
+resolution = "1710x1112"
+
 [power.battery]
 lessbright = 0
 
