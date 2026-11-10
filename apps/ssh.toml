@@ -1,0 +1,4 @@
+[hosts."github.com"]
+IdentityFile = "~/.ssh/id_ed25519"
+AddKeysToAgent = true
+UseKeychain = true

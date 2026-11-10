@@ -10,3 +10,6 @@ hooksPath = "/Users/joris/.git-hooks"
 
 [settings.push]
 autoSetupRemote = true
+
+[settings."url.git@github.com:"]
+insteadOf = "https://github.com/"
