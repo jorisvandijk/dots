@@ -1,5 +1,6 @@
 [system_config]
 enabled = true
+wallpaper = "earth"
 
 [keyboard]
 enabled = true
