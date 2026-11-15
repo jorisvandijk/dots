@@ -1,0 +1,5 @@
+# Sites that get an app of their own in ~/Applications.
+
+[Frigate]
+url = "https://frigate.vdijk.be"
+icon = "icons/frigate.png"
