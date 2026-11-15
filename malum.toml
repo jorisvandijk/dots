@@ -1,6 +1,7 @@
 [system_config]
 enabled = true
 wallpaper = "earth"
+terminal = "net.kovidgoyal.kitty"
 
 [keyboard]
 enabled = true
