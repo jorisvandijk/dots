@@ -143,3 +143,6 @@ remove = ["GarageBand", "iMovie", "Keynote", "Numbers", "Pages"]
 "storage.vdijk.be" = "10.10.10.119"
 Proxmox = "192.168.1.5"
 Docker = "10.10.10.119"
+
+[startup]
+apps = ["com.if.Amphetamine", "com.sindresorhus.Command-X", "com.doomlaser.cursorcerer"]
