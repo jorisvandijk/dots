@@ -38,6 +38,8 @@ scrollback_lines = 100000
 window_margin_width = 4
 enabled_layouts = "splits"
 focus_follows_mouse = true
+allow_remote_control = "socket-only"
+listen_on = "unix:/tmp/kitty"
 
 [keybindings]
 "cmd+h" = "previous_tab"
