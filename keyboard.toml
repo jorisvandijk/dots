@@ -6,6 +6,7 @@ grave = "delete_forward"
 non_us_backslash = "grave"
 fn = "left_control"
 left_control = "fn"
+caps_lock = "escape"
 
 [hyper]
 a = "com.anthropic.claudefordesktop"
