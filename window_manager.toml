@@ -17,3 +17,7 @@ app = "com.apple.archiveutility"
 [[float]]
 app = "org.gimp.gimp"
 title = "^(Open|Export|Import|Save|Overwrite)"
+
+[[float]]
+app = "com.apple.finder"
+title = "^(Copy|Move|Delete|Compress)$" # progress windows
