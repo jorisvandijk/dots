@@ -2,4 +2,10 @@
 name = "homelab"
 host = "192.168.1.5"
 user = "joris"
-shares = ["data", "cctv"]
+shares = ["data", "play"]
+
+[[server]]
+name = "docker"
+host = "storage.vdijk.be"
+user = "joris"
+shares = ["docker-storage"]
