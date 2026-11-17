@@ -21,3 +21,7 @@ title = "^(Open|Export|Import|Save|Overwrite)"
 [[float]]
 app = "com.apple.finder"
 title = "^(Copy|Move|Delete|Compress)$" # progress windows
+
+[[float]]
+app = "app.cyan.markedit"
+title = "^(Editor|Assistant|General|Window|Extensions)$" # settings and extensions windows
