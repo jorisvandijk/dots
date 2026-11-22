@@ -1,5 +1,4 @@
 [system_config]
-apple_account_picture = true
 enabled = true
 wallpaper = "earth"
 terminal = "net.kovidgoyal.kitty"

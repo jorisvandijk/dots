@@ -61,6 +61,7 @@ zsh-syntax-highlighting = "formula"
 amphetamine = 937984704
 bitwarden = 1352778147
 command-x = 6448461551
+home-assistant = 1099568401
 wireguard = 1451685025
 
 [release.mpv]
