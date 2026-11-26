@@ -1,3 +1,5 @@
-[preferences]
-startAtLogin = true
-noupdateMode = true
+[startup]
+at_login = true
+
+[updates]
+auto_check = false

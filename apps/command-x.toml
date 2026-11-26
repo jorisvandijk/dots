@@ -1,4 +1,3 @@
-[preferences]
-newMethod = true
-KeyboardShortcuts_cut = '{"carbonKeyCode":7,"carbonModifiers":256}' # cmd+X
-KeyboardShortcuts_paste = '{"carbonKeyCode":9,"carbonModifiers":256}' # cmd+V
+[shortcuts]
+cut = "cmd+x"
+paste = "cmd+v"
