@@ -28,11 +28,10 @@ show_read_articles = true
 
 [downloads]
 folder = "$HOME/Downloads/newsboat"
-max_at_once = 4
+max_downloads = 4
 
 [notifications]
-enabled = true
-after_every_reload = true
+when = "every_reload"
 
 [quit]
 confirm = false
