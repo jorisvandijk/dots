@@ -1,100 +1,84 @@
-[preferences.NSGlobalDomain]
-AppleInterfaceStyle = "Dark"
-AppleAccentColor = 6 # pink
-AppleShowScrollBars = "WhenScrolling"
-_HIHideMenuBar = true
-AppleMenuBarVisibleInFullscreen = false
-CGDisableCursorLocationMagnification = true # no shake to find the pointer
-InitialKeyRepeat = 30
-KeyRepeat = 2
-NSAutomaticCapitalizationEnabled = false
-NSAutomaticPeriodSubstitutionEnabled = false
-NSAutomaticSpellingCorrectionEnabled = false
-WebAutomaticSpellingCorrectionEnabled = false
-NSAutomaticDashSubstitutionEnabled = false 
-NSAutomaticQuoteSubstitutionEnabled = false
-"com.apple.swipescrolldirection" = false # natural scrolling off
-"com.apple.trackpad.forceClick" = false
-"com.apple.sound.beep.volume" = 0
-"com.apple.sound.uiaudio.enabled" = false
+[appearance]
+mode = "dark"
+accent_color = "pink"
+scroll_bars = "when_scrolling"
 
-[preferences."com.apple.BezelServices"]
-dAuto = false # keyboard backlight in low light
+[menu_bar]
+hide = "always"
+show_spotlight = false
+show_now_playing = false
+show_timer = false
+show_input_menu = false
 
-[preferences."com.apple.AppleMultitouchTrackpad"]
-Clicking = true
-TrackpadThreeFingerDrag = true
+[clock]
+show_am_pm = false
+show_day_of_week = true
 
-[preferences."com.apple.driver.AppleBluetoothMultitouch.trackpad"]
-Clicking = true
-TrackpadThreeFingerDrag = true
+[sound]
+alert_volume = 0
+ui_sounds = false
 
-[preferences."com.apple.finder"]
-AppleShowAllExtensions = true
-FXDefaultSearchScope = "SCcf" # current folder
-FXEnableExtensionChangeWarning = false
-FXPreferredViewStyle = "Nlsv" # list
-FXRemoveOldTrashItems = true
-NewWindowTarget = "PfHm" # home
-QuitMenuItem = true
-ShowHardDrivesOnDesktop = false
-ShowExternalHardDrivesOnDesktop = false
-ShowRemovableMediaOnDesktop = false
-ShowPathbar = true
-ShowStatusBar = true
+[pointer]
+natural_scrolling = false
+shake_to_locate = false
 
-[preferences."com.apple.dock"]
-autohide = true
-autohide-delay = 1000.0 # never slides in
-autohide-time-modifier = 0.0
-persistent-apps = []
-persistent-others = []
+[trackpad]
+tap_to_click = true
+three_finger_drag = true
+force_click = false
 
-[preferences."com.apple.desktopservices"]
-DSDontWriteNetworkStores = true
-DSDontWriteUSBStores = true
+[keyboard]
+repeat_delay_ms = 450
+repeat_interval_ms = 30
+auto_backlight = false
+input_sources = ["us"]
 
-[preferences."com.apple.screencapture"]
-location = "/Users/joris/Documents"
-target = "clipboard"
+[text]
+auto_correct = false
+auto_capitalize = false
+auto_period = false
+smart_dashes = false
+smart_quotes = false
 
-[preferences."com.apple.screensaver"]
-askForPassword = true
-askForPasswordDelay = 0
+[finder]
+show_extensions = true
+warn_on_extension_change = false
+search_scope = "current_folder"
+view = "list"
+new_window = "home"
+empty_old_trash = true
+quit_menu_item = true
+show_path_bar = true
+show_status_bar = true
+write_ds_store_on_network = false
+write_ds_store_on_usb = false
 
-[preferences."com.apple.menuextra.clock"]
-ShowAMPM = false
-ShowDayOfWeek = true
+[desktop]
+show_hard_drives = false
+show_external_drives = false
+show_removable_media = false
+show_icons = false
+show_widgets = false
+click_to_show = false
+stage_manager = false
 
-[preferences."com.apple.TextInputMenu"]
-visible = false
+[dock]
+show = "never"
+pinned_apps = []
+pinned_folders = []
 
-[current_host."com.apple.controlcenter"]
-Timer = 8 # hidden
-NowPlaying = 8 # Also hidden
+[screen_capture]
+folder = "/Users/joris/Documents"
+save_to = "clipboard"
 
-[current_host."com.apple.Spotlight"]
-MenuItemHidden = 1
+[siri]
+enabled = false
 
-[preferences."com.apple.WindowManager"]
-GloballyEnabled = false # Stage Manager
-EnableStandardClickToShowDesktop = false
-EnableTiledWindowMargins = false
-StandardHideDesktopIcons = true
-StandardHideWidgets = true
+[game_center]
+enabled = false
 
-[preferences."com.apple.assistant.support"]
-"Assistant Enabled" = false
-
-[preferences."com.apple.Siri"]
-StatusMenuVisible = false
-VoiceTriggerUserEnabled = false
-
-[preferences."com.apple.gamed"]
-GKOptedOutOfGameCenter = true
-
-[preferences."com.apple.HIToolbox"]
-AppleEnabledInputSources = [{ "InputSourceKind" = "Keyboard Layout", "KeyboardLayout ID" = 0, "KeyboardLayout Name" = "U.S." }]
+[screen_lock]
+delay = 0
 
 [default_apps]
 browser = "net.librewolf.librewolf"
@@ -112,7 +96,7 @@ boot_sound = false
 resolution = "1710x1112"
 
 [power.battery]
-lessbright = 0
+dim_screen = false
 
 [apple_apps]
 remove = ["GarageBand", "iMovie", "Keynote", "Numbers", "Pages"]
