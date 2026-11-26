@@ -1,15 +1,15 @@
-[settings.user]
+[user]
 name = "Joris van Dijk"
 email = "joris@jorisvandijk.com"
 
-[settings.init]
-defaultBranch = "main"
+[branches]
+default = "main"
 
-[settings.core]
-hooksPath = "/Users/joris/.git-hooks"
+[hooks]
+folder = "$HOME/.git-hooks"
 
-[settings.push]
-autoSetupRemote = true
+[push]
+auto_set_upstream = true
 
-[settings."url.git@github.com:"]
-insteadOf = "https://github.com/"
+[github]
+use_ssh = true

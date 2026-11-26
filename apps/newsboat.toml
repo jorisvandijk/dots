@@ -1,35 +1,43 @@
-[settings]
-browser = "open -a 'LibreWolf' %u"
-auto-reload = true
-reload-time = 60
-reload-threads = 10
-reload-only-visible-feeds = false
-refresh-on-startup = true
-download-path = "~/Downloads/newsboat/%n"
-max-downloads = 4
-articlelist-format = "%4i %f %D  %?T?|%-17T| ?%t"
-feedlist-format = "%4i %n %11u %t"
-datetime-format = "%b %d"
-feed-sort-order = "lastupdated"
-show-read-feeds = true
-show-read-articles = true
-cleanup-on-quit = true
-confirm-exit = false
-notify-program = "terminal-notifier -title 'Newsboat' -message"
-notify-always = true
-notify-screen = true
+[shortcuts]
+down = "j"
+up = "k"
+next_feed = "shift+j"
+previous_feed = "shift+k"
+last_item = "shift+g"
+first_item = "g"
+open = "l"
+close = "h"
 
-[keybindings]
-j = "down"
-k = "up"
-J = "next-feed articlelist"
-K = "prev-feed articlelist"
-G = "end"
-g = "home"
-l = "open"
-h = "quit"
+[browser]
+app = "net.librewolf.librewolf"
 
-[ignore_articles]
+[reload]
+on_startup = true
+auto_reload = true
+interval_minutes = 60
+parallel_feeds = 10
+only_visible_feeds = false
+
+[lists]
+feed_columns = ["number", "unread_mark", "counts", "title"]
+article_columns = ["number", "flags", "date", "feed", "title"]
+date_parts = ["month", "day"]
+sort_feeds_by = "last_updated"
+show_read_feeds = true
+show_read_articles = true
+
+[downloads]
+folder = "$HOME/Downloads/newsboat"
+max_downloads = 4
+
+[notifications]
+when = "every_reload"
+
+[quit]
+confirm = false
+clean_up = true
+
+[ignored_articles]
 "*" = 'link =~ "/shorts/"'
 
 [feeds]
