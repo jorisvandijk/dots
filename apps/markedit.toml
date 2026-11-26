@@ -1,13 +1,17 @@
-[preferences]
-"general.appearance" = "dark"
-"editor.light-theme" = "dracula"
-"editor.dark-theme" = "dracula"
-"editor.font-style" = { customFont = { name = "CaskaydiaCoveNFM-Regular" } }
-"editor.font-size" = 14.0
-"editor.line-wrapping" = true
+[appearance]
+mode = "dark"
+light_theme = "dracula"
+dark_theme = "dracula"
 
-[settings]
-"general.updateBehavior" = "never"
+[font]
+name = "CaskaydiaCoveNFM-Regular"
+size_pt = 14
+
+[editor]
+wrap_lines = "at_words"
+
+[updates]
+auto_check = false
 
 [extensions]
 ids = ["markedit-preview"]
