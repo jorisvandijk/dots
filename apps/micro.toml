@@ -1,44 +1,42 @@
-[settings]
-colorscheme = "dracula"
-mkparents = true
-softwrap = true
-wordwrap = true
+[colors]
+text = { fg = "#f8f8f2", bg = "#282a36" }
+comment = { fg = "#6272a4", bg = "#282a36" }
+identifier = { fg = "#50fa7b", bg = "#282a36" }
+identifier_class = { fg = "#8be9fd", bg = "#282a36" }
+identifier_var = { fg = "#f8f8f2", bg = "#282a36" }
+constant = { fg = "#bd93f9", bg = "#282a36" }
+constant_number = { fg = "#f8f8f2", bg = "#282a36" }
+constant_string = { fg = "#f1fa8c", bg = "#282a36" }
+symbol = { fg = "#ff79c6", bg = "#282a36" }
+symbol_brackets = { fg = "#f8f8f2", bg = "#282a36" }
+symbol_tag = { fg = "#ae81ff", bg = "#282a36" }
+type = { fg = "#8be9fd", bg = "#282a36", style = "italic" }
+type_keyword = { fg = "#ff79c6", bg = "#282a36" }
+type_extended = { bg = "#282a36" }
+special = { fg = "#ff79c6", bg = "#282a36" }
+statement = { fg = "#ff79c6", bg = "#282a36" }
+preprocessor = { fg = "#ff79c6", bg = "#282a36" }
+underlined = { fg = "#ff79c6", bg = "#282a36" }
+error = { fg = "#ff5555", bg = "#282a36", style = "bold" }
+todo = { fg = "#ff79c6", bg = "#282a36", style = "bold" }
+diff_added = { fg = "#50fa7b", bg = "#282a36" }
+diff_modified = { fg = "#ffb86c", bg = "#282a36" }
+diff_deleted = { fg = "#ff5555", bg = "#282a36" }
+gutter_error = { fg = "#ff5555", bg = "#282a36" }
+gutter_warning = { fg = "#e6db74", bg = "#282a36" }
+status_line = { fg = "#f8f8f2", bg = "#282a36" }
+tab_bar = { fg = "#f8f8f2", bg = "#282a36" }
+indent_char = { fg = "#6272a4", bg = "#282a36" }
+line_number = { fg = "#6272a4", bg = "#282a36" }
+current_line_number = { fg = "#f8f8f2", bg = "#282a36" }
+cursor_line = { fg = "#44475a", bg = "#282a36" }
+color_column = { fg = "#44475a", bg = "#282a36" }
 
-[bindings]
-"Alt-/" = "lua:comment.comment"
-"CtrlUnderscore" = "lua:comment.comment"
+[editor]
+wrap_lines = "at_words"
 
-[colorschemes.dracula]
-default = "#F8F8F2,#282A36"
-comment = "#6272A4,#282A36"
-identifier = "#50FA7B,#282A36"
-"identifier.class" = "#8BE9FD,#282A36"
-"identifier.var" = "#F8F8F2,#282A36"
-constant = "#BD93F9,#282A36"
-"constant.number" = "#F8F8F2,#282A36"
-"constant.string" = "#F1FA8C,#282A36"
-symbol = "#FF79C6,#282A36"
-"symbol.brackets" = "#F8F8F2,#282A36"
-"symbol.tag" = "#AE81FF,#282A36"
-type = "italic #8BE9FD,#282A36"
-"type.keyword" = "#FF79C6,#282A36"
-special = "#FF79C6,#282A36"
-statement = "#FF79C6,#282A36"
-preproc = "#FF79C6,#282A36"
-underlined = "#FF79C6,#282A36"
-error = "bold #FF5555,#282A36"
-todo = "bold #FF79C6,#282A36"
-diff-added = "#50FA7B,#282A36"
-diff-modified = "#FFB86C,#282A36"
-diff-deleted = "#FF5555,#282A36"
-gutter-error = "#FF5555,#282A36"
-gutter-warning = "#E6DB74,#282A36"
-statusline = "#F8F8F2,#282A36"
-tabbar = "#F8F8F2,#282A36"
-indent-char = "#6272A4,#282A36"
-line-number = "#6272A4,#282A36"
-current-line-number = "#F8F8F2,#282A36"
-cursor-line = "#44475A,#282A36"
-color-column = "#44475A,#282A36"
-"type.extended" = "default,#282A36"
-editor = "#F8F8F2,#282A36"
+[shortcuts]
+toggle_comment = ["option+slash", "ctrl+slash"]
+
+[files]
+create_folders = true
