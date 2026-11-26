@@ -23,6 +23,10 @@ space = "launcher"
 t = "toggle_float"
 v = "com.vscodium"
 w = "net.librewolf.librewolf"
+left = "split_left"
+right = "split_right"
+up = "split_taller"
+down = "split_shorter"
 
 [ctrl_cmd]
 h = "clipboard"
