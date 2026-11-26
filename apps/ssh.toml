@@ -1,4 +1,7 @@
-[hosts."github.com"]
-IdentityFile = "~/.ssh/id_ed25519"
-AddKeysToAgent = true
-UseKeychain = true
+[agent]
+add_keys = true
+use_keychain = true
+
+[keys.github]
+file = "$HOME/.ssh/id_ed25519"
+hosts = ["github.com"]

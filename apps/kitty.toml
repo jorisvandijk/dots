@@ -1,50 +1,48 @@
-[theme]
-foreground = "#f8f8f2"
-background = "#282a36"
-selection_foreground = "#ffffff"
-selection_background = "#44475a"
-url_color = "#8be9fd"
-color0 = "#21222c"
-color8 = "#6272a4"
-color1 = "#ff5555"
-color9 = "#ff6e6e"
-color2 = "#50fa7b"
-color10 = "#69ff94"
-color3 = "#f1fa8c"
-color11 = "#ffffa5"
-color4 = "#bd93f9"
-color12 = "#d6acff"
-color5 = "#ff79c6"
-color13 = "#ff92df"
-color6 = "#8be9fd"
-color14 = "#a4ffff"
-color7 = "#f8f8f2"
-color15 = "#ffffff"
+[font]
+family = "CaskaydiaCove Nerd Font Mono"
+size_pt = 14
+
+[colors]
+text = { fg = "#f8f8f2", bg = "#282a36" }
+selection = { fg = "#ffffff", bg = "#44475a" }
 cursor = "#f8f8f2"
-cursor_text_color = "background"
-active_tab_foreground = "#282a36"
-active_tab_background = "#f8f8f2"
-inactive_tab_foreground = "#282a36"
-inactive_tab_background = "#6272a4"
-mark1_foreground = "#282a36"
-mark1_background = "#ff5555"
+links = "#8be9fd"
+active_tab = { fg = "#282a36", bg = "#f8f8f2" }
+inactive_tab = { fg = "#282a36", bg = "#6272a4" }
+mark = { fg = "#282a36", bg = "#ff5555" }
 
-[settings]
-font_family = "CaskaydiaCove Nerd Font Mono"
-font_size = 14
-enable_audio_bell = false
-confirm_os_window_close = -1
-scrollback_lines = 100000
-window_margin_width = 4
-enabled_layouts = "splits"
+[colors.normal]
+black = "#21222c"
+red = "#ff5555"
+green = "#50fa7b"
+yellow = "#f1fa8c"
+blue = "#bd93f9"
+magenta = "#ff79c6"
+cyan = "#8be9fd"
+white = "#f8f8f2"
+
+[colors.bright]
+black = "#6272a4"
+red = "#ff6e6e"
+green = "#69ff94"
+yellow = "#ffffa5"
+blue = "#d6acff"
+magenta = "#ff92df"
+cyan = "#a4ffff"
+white = "#ffffff"
+
+[window]
+layouts = ["splits"]
+margin_pt = 4
 focus_follows_mouse = true
-allow_remote_control = "socket-only"
-listen_on = "unix:/tmp/kitty"
+scrollback_lines = 100000
+confirm_close = "when_running"
 
-[keybindings]
-"cmd+h" = "previous_tab"
-"cmd+l" = "next_tab"
-"cmd+j" = "previous_tab"
-"cmd+k" = "next_tab"
-"cmd+b" = "launch --location=vsplit"
-"cmd+w" = "close_window_with_confirmation ignore-shell"
+[shortcuts]
+previous_tab = ["cmd+h", "cmd+j"]
+next_tab = ["cmd+l", "cmd+k"]
+split_window = "cmd+b"
+close_window = "cmd+w"
+
+[bell]
+sound = false
