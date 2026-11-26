@@ -1,9 +1,11 @@
-[preferences]
-"Hide Dock Icon" = true
-"Allow Display Sleep" = false
-"Allow Closed-Display Sleep" = true
-"Allow Screen Saver" = false
-"Default Duration" = 0
-"Enable Mouse Movement" = false
-"Icon Style" = 0
-"Enable Statistics" = true
+[appearance]
+show_dock_icon = false
+
+[sessions]
+allow_display_sleep = false
+allow_sleep_when_closed = true
+allow_screen_saver = false
+move_pointer = false
+
+[statistics]
+enabled = true

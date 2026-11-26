@@ -1,8 +1,6 @@
-[preferences]
-autoShow = true
-idleHide = 5
+[shortcuts]
+toggle_pointer = "ctrl+option+k"
 
-# ctrl+option+K: key code 40, control 4096 + option 2048.
-[preferences.toggleCursorHotKey]
-keyCode = 40
-modifiers = 6144
+[pointer]
+hide_after_seconds = 5
+show_on_move = true
