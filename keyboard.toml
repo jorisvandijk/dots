@@ -9,6 +9,7 @@ left_control = "fn"
 caps_lock = "escape"
 
 [shortcuts]
+"hyper+a" = "com.anthropic.claudefordesktop"
 "hyper+b" = "com.bitwarden.desktop"
 "hyper+comma" = "stack_previous"
 "hyper+d" = "com.hnc.Discord"

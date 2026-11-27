@@ -17,6 +17,9 @@ auto_check_extensions = false
 telemetry = "off"
 send_crash_reports = false
 
+[assistant]
+hide_onboarding = true
+
 [extensions]
 ids = [
   "anthropic.claude-code",
