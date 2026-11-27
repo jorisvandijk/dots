@@ -4,7 +4,7 @@ accent_color = "pink"
 scroll_bars = "when_scrolling"
 
 [menu_bar]
-hide = "always"
+show = "never"
 show_spotlight = false
 show_now_playing = false
 show_timer = false
@@ -15,7 +15,7 @@ show_am_pm = false
 show_day_of_week = true
 
 [sound]
-alert_volume = 0
+alert_volume_percent = 0
 ui_sounds = false
 
 [pointer]
@@ -68,7 +68,7 @@ pinned_apps = []
 pinned_folders = []
 
 [screen_capture]
-folder = "/Users/joris/Documents"
+folder = "$HOME/Documents"
 save_to = "clipboard"
 
 [siri]
@@ -78,7 +78,7 @@ enabled = false
 enabled = false
 
 [screen_lock]
-delay = 0
+delay_seconds = 0
 
 [default_apps]
 browser = "net.librewolf.librewolf"

@@ -1,27 +1,27 @@
-[settings]
+[windows]
 frame = "visible"
-block_hide_minimize = true
+allow_hide_minimize = false
 
-[[float]]
-app = "com.apple.SecurityAgent" # password prompts
+[floating_windows.password_prompts]
+app = "com.apple.SecurityAgent"
 
-[[float]]
-app = "com.apple.appkit.xpc.openAndSavePanelService" # open and save dialogs
+[floating_windows.open_and_save_dialogs]
+app = "com.apple.appkit.xpc.openAndSavePanelService"
 
-[[float]]
-app = "com.apple.coreservices.uiagent" # system alerts
+[floating_windows.system_alerts]
+app = "com.apple.coreservices.uiagent"
 
-[[float]]
+[floating_windows.archive_utility]
 app = "com.apple.archiveutility"
 
-[[float]]
+[floating_windows.gimp_dialogs]
 app = "org.gimp.gimp"
 title = "^(Open|Export|Import|Save|Overwrite)"
 
-[[float]]
+[floating_windows.finder_progress]
 app = "com.apple.finder"
-title = "^(Copy|Move|Delete|Compress)$" # progress windows
+title = "^(Copy|Move|Delete|Compress)$"
 
-[[float]]
+[floating_windows.markedit_settings]
 app = "app.cyan.markedit"
-title = "^(Editor|Assistant|General|Window|Extensions)$" # settings and extensions windows
+title = "^(Editor|Assistant|General|Window|Extensions)$"
