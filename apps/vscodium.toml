@@ -28,4 +28,5 @@ ids = [
   "github.vscode-pull-request-github",
   "streetsidesoftware.code-spell-checker",
   "tamasfe.even-better-toml",
+  "hugoblox.hugo",
 ]
