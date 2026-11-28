@@ -67,6 +67,12 @@ show = "never"
 pinned_apps = []
 pinned_folders = []
 
+[hot_corners]
+top_left = "none"
+top_right = "none"
+bottom_left = "none"
+bottom_right = "none"
+
 [screen_capture]
 folder = "$HOME/Documents"
 save_to = "clipboard"
